@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="SVG.js"></script>
+<style>
+	#tablero{
+		border: 2px solid #000000;
+	}
+	th{
+		width: 20px;
+		height:  20px;
+		border: 2px solid #000000;
+	}
+	table{
+		position: relative;
+		left: 724px;
+		align-content: center;
+	}
+</style>
+</head>
+
+<body onLoad="main()">
+ 
+<table id="tabla" >
+  <tr>
+    <th>0</th>
+    <th>0</th>
+  </tr>
+  
+</table>
+  <svg width="1500" height="400" id="tablero" >
+	<circle cx="750" cy="200"  r="10"  stroke-width="20" fill="black"  />
+	<rect id="rectAzul" x="40" y="100" width="20" height="200" style="fill:rgb(0,0,255)"  />
+	<rect x="750" y="0" width="1" stroke="black" height="400" style="fill:rgb(255,255,255)"  />
+	<rect id="rectRojo" x="1440" y="100" width="20" height="200" style="fill:rgb(255,0,0)"  />
+  </svg>
+
+
+</body>
+</html>
